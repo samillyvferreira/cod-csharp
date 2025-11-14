@@ -1,0 +1,13 @@
+
+using System;
+
+class Program {
+    static void Main() {
+        double peso = double.Parse(Console.ReadLine());
+        double altura = double.Parse(Console.ReadLine());
+
+        double imc = peso / (altura * altura);
+
+        Console.WriteLine($"IMC = {imc:F2}");
+    }
+}
