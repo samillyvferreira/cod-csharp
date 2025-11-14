@@ -1,0 +1,18 @@
+using System;
+
+class Program {
+    static void Main() {
+        double[] n = new double[7];
+        for (int i = 0; i < 7; i++) n[i] = double.Parse(Console.ReadLine());
+
+        double m1 = (n[0] + n[1] + n[2]) / 3.0;
+        double m2 = (n[3] + n[4] + n[5]) / 3.0;
+        double mf = (m1 + m2 + n[6]) / 3.0;
+
+        Console.WriteLine($"Nota final: {mf:F1}");
+
+        if (mf < 60) Console.WriteLine("Conceito: C");
+        else if (mf < 80) Console.WriteLine("Conceito: B");
+        else Console.WriteLine("Conceito: A");
+    }
+}
