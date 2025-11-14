@@ -1,0 +1,14 @@
+using System;
+
+class Program {
+    static void Main() {
+        string nome1 = Console.ReadLine();
+        int idade1 = int.Parse(Console.ReadLine());
+        string nome2 = Console.ReadLine();
+        int idade2 = int.Parse(Console.ReadLine());
+
+        double media = (idade1 + idade2) / 2.0;
+
+        Console.WriteLine($"A idade média de {nome1} e {nome2} é de {media:F1} anos.");
+    }
+}
