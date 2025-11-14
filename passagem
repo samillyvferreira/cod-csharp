@@ -1,0 +1,19 @@
+
+using System;
+
+class Program {
+    static void Main() {
+        int codigo = int.Parse(Console.ReadLine());
+        string tipo = Console.ReadLine().ToLower(); // "ida" ou "ida e volta"
+
+        double valor = 0;
+        if (codigo == 1) valor = 120;
+        else if (codigo == 2) valor = 200;
+        else if (codigo == 3) valor = 50;
+        else if (codigo == 4) valor = 80;
+
+        if (tipo == "ida e volta") valor *= 0.9;
+
+        Console.WriteLine($"Valor total: R$ {valor:F2}");
+    }
+}
