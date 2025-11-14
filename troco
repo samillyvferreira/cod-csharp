@@ -1,0 +1,16 @@
+using System;
+
+class Program {
+    static void Main() {
+        double preco, dinheiro;
+        int qtd;
+
+        preco = double.Parse(Console.ReadLine());
+        qtd = int.Parse(Console.ReadLine());
+        dinheiro = double.Parse(Console.ReadLine());
+
+        double troco = dinheiro - preco * qtd;
+
+        Console.WriteLine($"TROCO = R$ {troco:F2}");
+    }
+}
